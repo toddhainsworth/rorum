@@ -18,6 +18,8 @@ group :development, :test do
 end
 
 gem 'devise'
+# Gravatar support
+gem 'avatar'
 
 group :doc do
   gem 'sdoc', require: false
