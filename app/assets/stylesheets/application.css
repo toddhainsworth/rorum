@@ -12,3 +12,7 @@
  *= require_tree .
  *= require bootstrap
  */
+
+.form_member {
+  padding: 5px 5px 5px 0px;
+}

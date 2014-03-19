@@ -21,15 +21,21 @@
         <li><%= link_to "Contact", contact_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Login", "#" %></li>
-        <li><%= link_to "Join", "#" %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+        <li><%= link_to "Join", new_user_registration_path %></li>
       </ul>
 
     </div><!--/.nav-collapse -->
   </div>
 </div>
 
+<div class="container"
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
 <%= yield %>
+
+</div>
 
 </body>
 </html>
