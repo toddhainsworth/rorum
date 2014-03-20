@@ -1,4 +1,7 @@
 class ForumsController < ApplicationController
+  skip_before_filter :authenticate_user!
+  before_filter :is_admin_user, except: [:index, :show]
+
   def index
     @forums = Forum.all
   end
